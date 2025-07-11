@@ -20,5 +20,5 @@ Este é um projeto simples feito com **HTML**, **CSS** e **JavaScript**, que per
 2. Escolha as moedas de origem e destino
 3. Digite o valor e veja o resultado em tempo real
 
-## 📁 Estrutura do Projeto
+
 
