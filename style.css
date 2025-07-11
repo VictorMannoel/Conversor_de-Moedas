@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background: linear-gradient(to right, #26D0CE, #1A2980);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: white;
+    border-radius: 15px;
+    width: 620px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.4em;
+    margin-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.FormConverter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+.Currency_row{
+    display: flex;
+    gap: 54px;
+    align-items: flex-end;
+    
+}
+
+
+.Currency_input{
+ width: 100%;   
+
+}
+
+
+input , select{
+    width: 100%;
+    padding: 15px;
+    border:  1px solid #c0c0c0;
+    border-radius: 10px;
+    background: #eeeeee;
+    font-size: 16px;
+
+}
+label{
+    display: flex;
+}
+
+.Converter_btn{
+    font-size: 18px;
+    font-weight: 600;
+    width: 95%;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(to right, #26D0CE, #1A2980);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    margin: 0 auto;
+}
+
+.Converter_btn:hover{
+    transform: scale(0.96);
+
+}
+
+.Loading{
+    margin: 20px;
+    display: none;
+}
+
+.spinner{
+    border: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(0, 162, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.info{
+    margin-top: 30px;
+}
+
+.Result{
+    background: linear-gradient(to right, #26D0CE, #1A2980);
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    color: white;
+    display: none;
+}
+
+.error{
+    background: linear-gradient(to right, #26D0CE, #1A2980);
+    color: white;
+    display: none;
+    width: 500px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+}
+
+.Result_Edit{
+    font-weight: 650;
+    font-size: 1.9em;
+}
+
+.taxa_Edit{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.error_edit{
+    padding-top: 3%;
+}
